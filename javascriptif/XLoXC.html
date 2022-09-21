@@ -21,10 +21,15 @@ document.write ("<br> <b> El circuito es más... </b> <br/>")
 
 if( XL > XC ){
  document.write( "<br> <b> INDUCTIVO!!! </b><br/>"); 
-}else{
- document.write (" <b> CAPACITIVO!!! </b> "); 
 }
-    
+if (XL < XC){
+ document.write (" <br/> <b> CAPACITIVO!!! </b> "); 
+}
+if (XL == XC){
+
+     document.write (" <br/> <b> RESONANTE!!! </b> "); 
+
+}   
 //-->
 </script>
  <p> Ingresar otra valores para sacar saber si el circuito es capacitivo o inductivo...</p> 
